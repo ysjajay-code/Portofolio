@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0f172a; /* Biru Gelap Maskulin */
+            --accent-blue: #38bdf8; /* Biru Muda Terang */
+            --accent-yellow: #fbbf24; /* Kuning Kontras */
+            --text-light: #f8fafc;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--bg-dark);
+            background-image: radial-gradient(circle at 20% 30%, #1e293b 0%, #0f172a 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: var(--text-light);
+            border-bottom: 8px solid var(--accent-blue);
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 30px; /* Kotak tumpul lebih maskulin dibanding bulat sempurna */
+            border: 5px solid var(--accent-blue);
+            object-fit: cover;
+            transform: rotate(-3deg);
+            transition: 0.3s;
+            background: #fff;
+        }
+
+        .profile-img:hover {
+            transform: rotate(0deg) scale(1.1);
+            border-color: var(--accent-yellow);
+        }
+
+        h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin: 20px 0 10px;
+            color: var(--accent-yellow);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Education Section */
+        .section-container {
+            padding: 80px 20 (content)px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Bangers', cursive;
+            font-size: 2.5rem;
+            color: var(--bg-dark);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .grid-edu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 6px 6px 0px var(--accent-blue);
+            border: 2px solid var(--bg-dark);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 12px 12px 0px var(--accent-yellow);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--bg-dark);
+            border-bottom: 2px solid var(--accent-blue);
+            display: inline-block;
+        }
+
+        /* Achievement Section */
+        .achievement-box {
+            margin: 50px 20px;
+            padding: 40px;
+            background: var(--bg-dark);
+            color: white;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-box::before {
+            content: "🏆";
+            position: absolute;
+            right: -10px;
+            bottom: -10px;
+            font-size: 100px;
+            opacity: 0.1;
+        }
+
+        /* Contact Section */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--bg-dark);
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .ig { background: var(--accent-blue); color: white; }
+        .wa { background: #25d366; color: white; }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            filter: brightness(1.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .address {
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <img src="https://raw.githubusercontent.com/ysjajay-code/azhar/refs/heads/main/FB_IMG_1769658058435.jpg" alt="Foto Cowo Keren" class="profile-img">
+        <h1>YO, I'M MUHAMMAD AZHAR!</h1>
+        <p class="description"> <b>Muhammad Azhar lahir di Subang pada 04 Agustus 2007.<b> Ia adalah seorang pelajar dari SMAN 1 Subang yang memiliki dedikasi tinggi untuk menggapai cita-citanya.Memiliki cita-cita sebagai orang yang sukses di dunia maupun di akhirat dan menjadi kebanggan kedua orang tua. Selamat datang di Portofolio Muhammad Azhar!</p>
+    </header>
+
+    <section class="section-container">
+        <h2 class="section-title">Riwayat Sekolah ️</h2>
+        <div class="grid-edu">
+            <div class="card">
+                <h3>TK</h3>
+                <p>TKIT Faras Aulia (2012-2014</p>
+            </div>
+            <div class="card">
+                <h3>SD</h3>
+                <p>SDIT 'Alamy Subang (2014-2020)</p>
+            </div>
+            <div class="card">
+                <h3>SMP</h3>
+                <p>SMPIT 'Alamy Subang (2020-2023)</p>
+            </div>
+            <div class="card">
+                <h3>SMA</h3>
+                <p>SMAN 1 Subang (2023-sekarang) </p>
+            </div>
+        </div>
+
+        <div class="achievement-box">
+            <h2 style="color: var(--accent-yellow);">MAIN ACHIEVEMENT 🏅</h2>
+            <p style="font-size: 1.3rem;">"ANGGOTA PASKIBRAKA TAHUN 2024 TINGKAT KABUPATEN SUBANG"</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2 style="font-family: 'Bangers'; font-size: 2rem;">LET'S CONNECT!</h2>
+        <div>
+            <a href="https://instagram.com/muzharr" class="btn ig" target="_blank">Instagram</a>
+            <a href="https://wa.me/6281902953773" class="btn wa" target="_blank">WhatsApp</a>
+        </div>
+        <p class="address">📍 Basecamp: Subang</p>
+    </footer>
+
+</body>
+</html>
